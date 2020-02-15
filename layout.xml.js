@@ -1,4 +1,4 @@
-<!-- module.exports = -->
+module.exports =
 
 <vertical>
   <button id='eat'>eat</button>
