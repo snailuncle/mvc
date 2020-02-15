@@ -22,8 +22,6 @@
   
 
 ####  虽然是.xml.js, 但是我们最后运行代码的时候, 还是要在第一行加上: module.exports =, 编写界面的时候, 我们先将他注释就可以了, 运行的时候再取消注释
-##### 取消注释的时候
-`module.exports =`
-##### 注释的时候
-`<!-- module.exports = -->`
+##### 注释的时候   &nbsp;&nbsp;   `<!-- module.exports = -->`
+##### 取消注释的时候   &nbsp;&nbsp;   `module.exports =`
 
