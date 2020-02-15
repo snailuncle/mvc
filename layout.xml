@@ -1,5 +1,3 @@
-module.exports =
-
 <vertical>
   <button id='eat'>eat</button>
   <button id='bark'>bark</button>
