@@ -6,4 +6,5 @@ module.exports =
   <button id='goToBed'>goToBed</button>
   <input id='num' w="*"></input>
   <button id='readNum'>readNum</button>
+  <text id='log' gravity='center' textSize='30sp'></text>
 </vertical>
