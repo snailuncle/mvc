@@ -5,4 +5,8 @@
   <input id='num' w="*"></input>
   <button id='readNum'>readNum</button>
   <text id='log' gravity='center' textSize='30sp'></text>
+  <vertical>
+    <text id='celebrityName' gravity='center' textSize='30sp' text='{{config.celebrityName}}' textStyle='bold'></text>
+    <img id='celebrityImg' src='{{config.celebrityImg}}' ></img>
+  </vertical>
 </vertical>
