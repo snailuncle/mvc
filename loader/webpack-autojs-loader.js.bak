@@ -1,0 +1,66 @@
+/**
+ * 作者: 家
+ * QQ: 203118908
+ * 功能: 用于webpack的loader 预处理autojs格式的文件
+ */
+
+
+var 替换双花括号 = function () {
+  console.log(arguments);
+  var str = arguments[0]
+  console.log('str=')
+  console.log(str)
+  while (1) {
+    if (/\{\{.*?\}\}/.test(str)) {
+      console.log('有 双  花括号')
+      str = str.replace(/\{\{(.*?)\}\}/, '$${$1}')
+    } else {
+      console.log('没 双  花括号')
+      break;
+    }
+  }
+  return str
+}
+var xml添加反引号 = function (content) {
+  // return content.replace(/ui.layout\((.*?)\)/g, "ui.layout(`$1`)")
+  console.log('xml添加反引号  开始')
+
+  var result;
+  console.log('添加美元符号之前, content=')
+  console.log(content)
+  result = content;
+  result = result.replace(/ui\.layout\([\s\S]*?\)/gm, 替换双花括号)
+  result = result.replace(/floaty\.rawWindow\([\s\S]*?\)/gm, 替换双花括号)
+  result = result.replace(/floaty\.window\([\s\S]*?\)/gm, 替换双花括号)
+  result = result.replace(/ui\.inflate\([\s\S]*?\)/gm, 替换双花括号)
+  console.log('添加美元符号之后, result=')
+  console.log(result)
+
+  result = result.replace(/ui\.layout\(([\s\S]+?)\)/gm, "ui.layout(`$1`)")
+  result = result.replace(/floaty\.rawWindow\(([\s\S]+?)\)/gm, "floaty.rawWindow(`$1`)")
+  result = result.replace(/floaty\.window\(([\s\S]+?)\)/gm, "floaty.window(`$1`)")
+  result = result.replace(/ui\.inflate\(([\s\S]+?)\)/gm, "ui.inflate(`$1`)")
+  console.log('添加反引号之后, result=')
+  console.log(result)
+
+  console.log('xml添加反引号  结束')
+  return result
+}
+
+var someAsyncOperation = function (content, callback) {
+  var err = ''
+  try {
+    content = xml添加反引号(content)
+  } catch (e) {
+    err = e;
+  }
+  callback(err, content)
+}
+
+module.exports = function (content, map, meta) {
+  var callback = this.async();
+  someAsyncOperation(content, function (err, result) {
+    if (err) return callback(err);
+    callback(null, result, map, meta);
+  });
+};

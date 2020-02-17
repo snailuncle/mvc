@@ -1,0 +1,54 @@
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+
+"use strict";
+
+const fs = require('fs')
+const process = require('process')
+
+/** @typedef {import("../Compiler")} Compiler */
+
+class LogAllFile {
+	/**
+	 * @param {Compiler} compiler the compiler
+	 * @returns {void}
+	 */
+  apply (compiler) {
+    compiler.hooks.compilation.tap(
+      "LogAllFile",
+      compilation => {
+        compilation.hooks.optimizeChunks.tap(
+          {
+            name: "LogAllFile"
+          },
+          chunks => {
+            // for each chunk
+            console.log('this is LogAllFile ===========================================开始')
+            for (const chunk of chunks) {
+              // rawRequest: './layout.xml',  判断文件类型 后缀
+              // _source._value: './layout.xml',  文件原始内容
+              // console.log('chunk._modules')
+              // console.log(chunk._modules)
+              let _modules = chunk._modules
+              // console.log(_modules)
+              // _modules.foreach(item => {
+              //   console.log(item)
+              // })
+              for (let v of _modules) {
+                console.log(v.rawRequest);
+                console.log(v._source._value);
+                console.log('this is LogAllFile ===========================================结束')
+                process.exit()
+
+              };
+            }
+
+          }
+        );
+      }
+    );
+  }
+}
+module.exports = LogAllFile;

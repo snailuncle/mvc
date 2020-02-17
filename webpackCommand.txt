@@ -1,0 +1,3 @@
+webpack --profile --json > compilation-stats.json
+
+

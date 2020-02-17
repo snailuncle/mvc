@@ -1,0 +1,105 @@
+{
+  NormalModule {
+    dependencies: [
+      [HarmonyCompatibilityDependency],
+      [HarmonyInitDependency],
+      [CommonJsRequireDependency],
+      [RequireHeaderDependency],
+      [ConstDependency],
+      [HarmonyImportSideEffectDependency],
+      [HarmonyImportSpecifierDependency],
+      [CommonJsRequireDependency],
+      [RequireHeaderDependency]
+    ],
+    blocks: [],
+    variables: [],
+    type: 'javascript/auto',
+    context: 'F:\\myGithub\\mvc',
+    debugId: 1000,
+    hash: undefined,
+    renderedHash: undefined,
+    resolveOptions: {},
+    factoryMeta: {},
+    warnings: [],
+    errors: [],
+    buildMeta: { exportsType: 'namespace', providedExports: [] },
+    buildInfo: {
+      cacheable: true,
+      fileDependencies: [Set],
+      contextDependencies: Set {},
+      assets: undefined,
+      assetsInfo: undefined,
+      strict: true,
+      exportsArgument: '__webpack_exports__',
+      temporaryProvidedExports: false
+    },
+    reasons: [ [ModuleReason] ],
+    _chunks: SortableSet [Set] {
+      [Chunk],
+      _sortFn: [Function: sortById],
+      _lastActiveSortFn: null,
+      _cache: undefined,
+      _cacheOrderIndependent: undefined
+    },
+    id: null,
+    index: 0,
+    index2: 4,
+    depth: 0,
+    issuer: null,
+    profile: { factory: 27, building: 481 },
+    prefetched: false,
+    built: true,
+    used: true,
+    usedExports: true,
+    optimizationBailout: [],
+    _rewriteChunkInReasons: undefined,
+    useSourceMap: false,
+    _source: OriginalSource {
+      _value: "'ui';\n" +
+        '/**\r\n' +
+        ' * @浣滆€?瀹禱r\n' +
+        ' * @qq 203118908\r\n' +
+        ' * @浜ゆ祦缇?812825651\r\n' +
+        ' * @鍔熻兘 autojs鐨?MVC妗嗘灦\r\n' +
+        ' * @澶囨敞 鈺般仱銈涙棤鍚嶅皬濮愨€:鐣岄潰鏂囦欢鐩存帴鐢▁ml鍚庣紑\r\n' +
+        ' */\n' +
+        '\n' +
+        "let config = require('./config'); // 閰嶇疆鎸夐挳鐨勭偣鍑讳簨浠禱n" +
+        '\n' +
+        '\n' +
+        'import kOsjVFdhdSAu6172947178011575944299 from "./layout.xml";\n' +
+        'ui.layout(kOsjVFdhdSAu6172947178011575944299);\n' +
+        '; // 鍔犺浇鐣岄潰\n' +
+        '\n' +
+        "let registerViewListeningEvent = require('./registerViewListeningEvent'); // 娉ㄥ唽鎸夐挳鐐瑰嚮浜嬩欢\n" +
+        '\n' +
+        '\n' +
+        'registerViewListeningEvent(config);',
+      _name: 'F:\\oss-work\\node_modules\\babel-loader\\lib\\index.js!F:\\oss-work\\node_modules\\webpack-autojs-replace-uilayoutfile-loader\\index.js!F:\\myGithub\\mvc\\main.js'
+    },
+    request: 'F:\\oss-work\\node_modules\\babel-loader\\lib\\index.js!F:\\oss-work\\node_modules\\webpack-autojs-replace-uilayoutfile-loader\\index.js!F:\\myGithub\\mvc\\main.js',
+    userRequest: 'F:\\myGithub\\mvc\\main.js',
+    rawRequest: 'F:/myGithub\\mvc\\main.js',
+    binary: false,
+    parser: Parser {
+      _pluginCompat: [SyncBailHook],
+      hooks: [Object],
+      options: {},
+      sourceType: 'auto',
+      scope: undefined,
+      state: undefined,
+      comments: undefined
+    },
+    generator: JavascriptGenerator {},
+    resource: 'F:\\myGithub\\mvc\\main.js',
+    matchResource: undefined,
+    loaders: [ [Object], [Object] ],
+    error: null,
+    _sourceSize: null,
+    _buildHash: '18cda60732b6b5add0f9bbc729665223',
+    buildTimestamp: 1581890718141,
+    _cachedSources: Map {},
+    lineToLine: false,
+    _lastSuccessfulBuildMeta: { exportsType: 'namespace', providedExports: [] },
+    _ast: null
+  }

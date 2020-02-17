@@ -1,0 +1,261 @@
+NormalModule {
+  dependencies: [],
+  blocks: [],
+  variables: [],
+  type: 'javascript/auto',
+  context: 'F:\\myGithub\\mvc',
+  debugId: 1002,
+  hash: undefined,
+  renderedHash: undefined,
+  resolveOptions: {},
+  factoryMeta: {},
+  warnings: [],
+  errors: [],
+  buildMeta: { providedExports: true },
+  buildInfo: {
+    cacheable: true,
+    fileDependencies: Set { 'F:\\myGithub\\mvc\\registerViewListeningEvent.js' },
+    contextDependencies: Set {},
+    assets: undefined,
+    assetsInfo: undefined,
+    temporaryProvidedExports: false
+  },
+  reasons: [
+    ModuleReason {
+      module: [NormalModule],
+      dependency: [CommonJsRequireDependency],
+      explanation: undefined,
+      _chunks: null
+    }
+  ],
+  _chunks: SortableSet [Set] {
+    Chunk {
+      id: null,
+      ids: null,
+      debugId: 1000,
+      name: 'main',
+      preventIntegration: false,
+      entryModule: [NormalModule],
+      _modules: [SortableSet [Set]],
+      filenameTemplate: undefined,
+      _groups: [SortableSet [Set]],
+      files: [],
+      rendered: false,
+      hash: undefined,
+      contentHash: [Object: null prototype] {},
+      renderedHash: undefined,
+      chunkReason: undefined,
+      extraAsync: false,
+      removedModules: undefined
+    },
+    _sortFn: [Function: sortById],
+    _lastActiveSortFn: null,
+    _cache: undefined,
+    _cacheOrderIndependent: undefined
+  },
+  id: null,
+  index: 4,
+  index2: 3,
+  depth: 1,
+  issuer: NormalModule {
+    dependencies: [
+      [HarmonyCompatibilityDependency],
+      [HarmonyInitDependency],
+      [CommonJsRequireDependency],
+      [RequireHeaderDependency],
+      [ConstDependency],
+      [HarmonyImportSideEffectDependency],
+      [HarmonyImportSpecifierDependency],
+      [CommonJsRequireDependency],
+      [RequireHeaderDependency]
+    ],
+    blocks: [],
+    variables: [],
+    type: 'javascript/auto',
+    context: 'F:\\myGithub\\mvc',
+    debugId: 1000,
+    hash: undefined,
+    renderedHash: undefined,
+    resolveOptions: {},
+    factoryMeta: {},
+    warnings: [],
+    errors: [],
+    buildMeta: { exportsType: 'namespace', providedExports: [] },
+    buildInfo: {
+      cacheable: true,
+      fileDependencies: [Set],
+      contextDependencies: Set {},
+      assets: undefined,
+      assetsInfo: undefined,
+      strict: true,
+      exportsArgument: '__webpack_exports__',
+      temporaryProvidedExports: false
+    },
+    reasons: [ [ModuleReason] ],
+    _chunks: SortableSet [Set] {
+      [Chunk],
+      _sortFn: [Function: sortById],
+      _lastActiveSortFn: null,
+      _cache: undefined,
+      _cacheOrderIndependent: undefined
+    },
+    id: null,
+    index: 0,
+    index2: 4,
+    depth: 0,
+    issuer: null,
+    profile: undefined,
+    prefetched: false,
+    built: true,
+    used: true,
+    usedExports: true,
+    optimizationBailout: [],
+    _rewriteChunkInReasons: undefined,
+    useSourceMap: false,
+    _source: OriginalSource {
+      _value: "'ui';\n" +
+        '/**\r\n' +
+        ' * @作者 家\r\n' +
+        ' * @qq 203118908\r\n' +
+        ' * @交流群 812825651\r\n' +
+        ' * @功能 autojs的 MVC框架\r\n' +
+        ' * @备注 ╰つ゛无名小姐‭说:界面文件直接用xml后缀\r\n' +
+        ' */\n' +
+        '\n' +
+        "let config = require('./config'); // 配置按钮的点击事件\n" +
+        '\n' +
+        '\n' +
+        'import HLENlDyiYvDf51962433209016608318 from "./layout.xml";\n' +
+        'ui.layout(HLENlDyiYvDf51962433209016608318);\n' +
+        '; // 加载界面\n' +
+        '\n' +
+        "let registerViewListeningEvent = require('./registerViewListeningEvent'); // 注册按钮点击事件\n" +
+        '\n' +
+        '\n' +
+        'registerViewListeningEvent(config);',
+      _name: 'F:\\oss-work\\node_modules\\babel-loader\\lib\\index.js!F:\\oss-work\\node_modules\\webpack-autojs-replace-uilayoutfile-loader\\index.js!F:\\myGithub\\mvc\\main.js'
+    },
+    request: 'F:\\oss-work\\node_modules\\babel-loader\\lib\\index.js!F:\\oss-work\\node_modules\\webpack-autojs-replace-uilayoutfile-loader\\index.js!F:\\myGithub\\mvc\\main.js',        
+    userRequest: 'F:\\myGithub\\mvc\\main.js',
+    rawRequest: 'F:/myGithub\\mvc\\main.js',
+    binary: false,
+    parser: Parser {
+      _pluginCompat: [SyncBailHook],
+      hooks: [Object],
+      options: {},
+      sourceType: 'auto',
+      scope: undefined,
+      state: undefined,
+      comments: undefined
+    },
+    generator: JavascriptGenerator {},
+    resource: 'F:\\myGithub\\mvc\\main.js',
+    matchResource: undefined,
+    loaders: [ [Object], [Object] ],
+    error: null,
+    _sourceSize: null,
+    _buildHash: '0229d18ea06757ac114915cc219482f1',
+    buildTimestamp: 1581898410881,
+    _cachedSources: Map {},
+    lineToLine: false,
+    _lastSuccessfulBuildMeta: { exportsType: 'namespace', providedExports: [] },
+    _ast: null
+  },
+  profile: undefined,
+  prefetched: false,
+  built: true,
+  used: true,
+  usedExports: true,
+  optimizationBailout: [],
+  _rewriteChunkInReasons: undefined,
+  useSourceMap: false,
+  _source: OriginalSource {
+    _value: 'module.exports = function (config) {\n' +
+      '  let button = config.button;\n' +
+      '\n' +
+      '  for (var k in button) {\n' +
+      "    ui[k].on('click', button[k]);\n" +
+      '  }\n' +
+      '};',
+    _name: 'F:\\oss-work\\node_modules\\babel-loader\\lib\\index.js!F:\\oss-work\\node_modules\\webpack-autojs-replace-uilayoutfile-loader\\index.js!F:\\myGithub\\mvc\\registerViewListeningEvent.js'
+  },
+  request: 'F:\\oss-work\\node_modules\\babel-loader\\lib\\index.js!F:\\oss-work\\node_modules\\webpack-autojs-replace-uilayoutfile-loader\\index.js!F:\\myGithub\\mvc\\registerViewListeningEvent.js',
+  userRequest: 'F:\\myGithub\\mvc\\registerViewListeningEvent.js',
+  rawRequest: './registerViewListeningEvent',
+  binary: false,
+  parser: Parser {
+    _pluginCompat: SyncBailHook {
+      _args: [Array],
+      taps: [Array],
+      interceptors: [],
+      call: [Function: lazyCompileHook],
+      promise: [Function: lazyCompileHook],
+      callAsync: [Function: lazyCompileHook],
+      _x: undefined
+    },
+    hooks: {
+      evaluateTypeof: [HookMap],
+      evaluate: [HookMap],
+      evaluateIdentifier: [HookMap],
+      evaluateDefinedIdentifier: [HookMap],
+      evaluateCallExpressionMember: [HookMap],
+      statement: [SyncBailHook],
+      statementIf: [SyncBailHook],
+      label: [HookMap],
+      import: [SyncBailHook],
+      importSpecifier: [SyncBailHook],
+      export: [SyncBailHook],
+      exportImport: [SyncBailHook],
+      exportDeclaration: [SyncBailHook],
+      exportExpression: [SyncBailHook],
+      exportSpecifier: [SyncBailHook],
+      exportImportSpecifier: [SyncBailHook],
+      varDeclaration: [HookMap],
+      varDeclarationLet: [HookMap],
+      varDeclarationConst: [HookMap],
+      varDeclarationVar: [HookMap],
+      canRename: [HookMap],
+      rename: [HookMap],
+      assigned: [HookMap],
+      assign: [HookMap],
+      typeof: [HookMap],
+      importCall: [SyncBailHook],
+      call: [HookMap],
+      callAnyMember: [HookMap],
+      new: [HookMap],
+      expression: [HookMap],
+      expressionAnyMember: [HookMap],
+      expressionConditionalOperator: [SyncBailHook],
+      expressionLogicalOperator: [SyncBailHook],
+      program: [SyncBailHook],
+      hotAcceptCallback: [SyncBailHook],
+      hotAcceptWithoutCallback: [SyncBailHook]
+    },
+    options: {},
+    sourceType: 'auto',
+    scope: undefined,
+    state: undefined,
+    comments: undefined
+  },
+  generator: JavascriptGenerator {},
+  resource: 'F:\\myGithub\\mvc\\registerViewListeningEvent.js',
+  matchResource: undefined,
+  loaders: [
+    {
+      options: undefined,
+      loader: 'F:\\oss-work\\node_modules\\babel-loader\\lib\\index.js'
+    },
+    {
+      options: undefined,
+      loader: 'F:\\oss-work\\node_modules\\webpack-autojs-replace-uilayoutfile-loader\\index.js'
+    }
+  ],
+  error: null,
+  _sourceSize: null,
+  _buildHash: '1476e89f97854aa8239e11f28b34bdcd',
+  buildTimestamp: 1581898411393,
+  _cachedSources: Map {},
+  lineToLine: false,
+  _lastSuccessfulBuildMeta: { providedExports: true },
+  _ast: null
+}
