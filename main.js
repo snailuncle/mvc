@@ -8,8 +8,8 @@
  */
 
 let config = require('./config') // 配置按钮的点击事件
-let layout = files.read('./layout.xml') // 读取界面
+ui.layoutFile("./layout.xml"); // 加载界面
 let registerViewListeningEvent = require('./registerViewListeningEvent') // 注册按钮点击事件
-
-ui.layout(layout)
 registerViewListeningEvent(config)
+
+

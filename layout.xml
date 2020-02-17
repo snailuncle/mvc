@@ -6,7 +6,7 @@
   <button id='readNum'>readNum</button>
   <text id='log' gravity='center' textSize='30sp'></text>
   <vertical>
-    <text id='celebrityName' gravity='center' textSize='30sp' text='{{config.celebrityName}}' textStyle='bold'></text>
-    <img id='celebrityImg' src='{{config.celebrityImg}}' ></img>
+    <text id='celebrityName' gravity='center' textSize='30sp' text='{{celebrityName}}' textStyle='bold'></text>
+    <img id='celebrityImg' src='{{celebrityImg}}' ></img>
   </vertical>
 </vertical>
