@@ -13,4 +13,4 @@
 ### 打包
 1. 在scriptConfig中修改xmlConfigPath, 这是用于替换xml文件中的变量
 2. 在根目录下执行 `webpack`, 打包后的文件在`dist`目录下
-  
+3. 不明白的可以参考`https://github.com/snailuncle/webpack-autojs`
